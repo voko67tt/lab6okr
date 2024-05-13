@@ -1,0 +1,81 @@
+.float-left {
+    float: left;
+    width: 50%; 
+}
+
+.float-right {
+    float: right;
+    width: 50%; 
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    background-color: rgb(196, 149, 23);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    position: relative; 
+}
+
+.container {
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+header {
+    background-color: #452ae0;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.content {
+    min-height: calc(100vh - 100px);  
+    padding-bottom: 100px; /* розмір футера */
+    position: relative;
+}
+
+a:link {
+    color: blue;
+}
+a:visited {
+    color: purple;
+}
+a:hover {
+    color: red;
+}
+a:active {
+    color: green;
+}
+
+ul li:first-child {
+    font-weight: bold;
+}
+
+p:before {
+    content: "Початок тексту: ";
+    font-weight: bold;
+}
+p:after {
+    content: " Кінець тексту.";
+    font-style: italic;
+}
